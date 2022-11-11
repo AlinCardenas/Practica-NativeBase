@@ -12,11 +12,8 @@ export const TabNavigator = () => {
   return (
     <Tab.Navigator 
     screenOptions={ ({ route }) => ({
-      // #7 Se genera la pripiedad tabBarIcon con una arrowFunction
       tabBarIcon: ({ focused, color, size }) => {
-        // #8 Se crea variable que alamcena el nombre del Icono en cuestion
         let nameIcon='';
-        // #9 Generamos un switch que, en base al nombre rescatado de la screen, establece un nombre de icono u otro
         switch(route.name){
           case 'Inicio':
             nameIcon= focused ? 'home' : 'home-outline';

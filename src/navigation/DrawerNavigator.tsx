@@ -3,6 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import { AboutPage } from '../Pages/AboutPage';
 import { ContactPage } from '../Pages/ContactPage';
+import { ApiPage } from '../Pages/ApiPage';
 
 import { TabNavigator } from './TabNavigator';
 
@@ -22,6 +23,10 @@ export const DrawerNavigator = () => {
         <Drawer.Screen 
           name='Contacto'
           component={ ContactPage }
+        />
+        <Drawer.Screen 
+          name='Api'
+          component={ ApiPage }
         />
     </Drawer.Navigator>
   )
